@@ -9,7 +9,12 @@ namespace Task1
     {
         public static void Print(int[][] array)
         {
-            if (array[0][0] > 5 || array[0][1] > 5 || array[0][2] > 10 || array[0][3] > 10 || array[0][4] > 15 || array[0][5] > 15 || array[0][6] > 20 || array[0][7] > 20)
+            if (array[0][1] == 0 || array[0][2] == 0 || array[0][3] == 0 || array[0][4] == 0 || array[0][5] == 0 || array[0][6] == 0 || array[0][7] == 0)
+            {
+                Console.WriteLine("==================");
+                Console.WriteLine("Disqualified");
+                Console.WriteLine("==================");
+            }else if (array[0][0] > 5 || array[0][1] > 5 || array[0][2] > 10 || array[0][3] > 10 || array[0][4] > 15 || array[0][5] > 15 || array[0][6] > 20 || array[0][7] > 20)
             {
                 Console.WriteLine("==================");
                 Console.WriteLine("Disqualified");
@@ -31,11 +36,6 @@ namespace Task1
             {
                 Console.WriteLine("==================");
                 Console.WriteLine("Qualified");
-                Console.WriteLine("==================");
-            }else if (array[0][1] != 0 || array[0][2] != 0 || array[0][3] != 0 || array[0][4] != 0 || array[0][5] != 0 || array[0][6] != 0 || array[0][7] != 0)
-            {
-                Console.WriteLine("==================");
-                Console.WriteLine("Disqualified");
                 Console.WriteLine("==================");
             }
 
